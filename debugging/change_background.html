@@ -29,9 +29,8 @@
     });
 
     function changeBackgroundColor() {
-        // Generate a random color and pad it with zeros if it's too short
+        // FIXED: Padded with zeros in case the random number generates a short hex code
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
-        // Change the background color of the body
         document.body.style.backgroundColor = randomColor;
     }
 </script>
